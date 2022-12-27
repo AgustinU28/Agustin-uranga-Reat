@@ -1,31 +1,35 @@
 import React from 'react'
 import{ Link } from 'react-router-dom'
+import CardWidget from './CartWidget'
 
 const NavBar = () => {
   return (
     <>
-    <nav calssName="navbar navbar-expand-lg bg-light">
-  <div calssName="container-fluid">
-    <a calssName="navbar-brand">ECOMMERCE</a>
-    <button calssName="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span calssName="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Ecommerce</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <div calssName="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul calssName="navbar-nav">
-        <li calssName="nav-item">
-          <Link calssName="nav-link active" aria-current="page" to='/' >Inicio</Link>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <Link class="nav-link active" aria-current="page" to="/">Inicio</Link>
         </li>
-        <li calssName="nav-item">
-          <Link calssName="nav-link" to='/'>Informacion</Link>
+        <li class="nav-item">
+          <Link class="nav-link" to="/">Contacto</Link>
         </li>
-        <li calssName="nav-item">
-          <Link calssName="nav-link" to='/'>Destacado</Link>
+        <li class="nav-item">
+          <Link class="nav-link" to="/">Destacado</Link>
         </li>
-        <li calssName="nav-item">
-          <Link calssName="nav-link" to='/'>Contacto</Link>
+        <li class="nav-item">
+          <Link class="nav-link " to="/">Informacion</Link>
+          </li>
+          <li class="nav-item">
+          <Link class="nav-link active" aria-current="page">
+            <CardWidget/></Link>
         </li>
-          </ul>
-        
+      </ul>
     </div>
   </div>
 </nav>

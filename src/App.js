@@ -5,6 +5,7 @@ import  Inicio  from './paguinas/Inicio';
 import  Contacto from './paguinas/Contacto';
 import Destacado from './paguinas/Destacado';
 import Informacion from './paguinas/Informacion';
+import CardWidget from './components/CartWidget';
 
 function App() {
   return (
@@ -12,10 +13,12 @@ function App() {
  <BrowserRouter>
  < NavBar/>
  <Routes>
- <Route patch='/' element={<Inicio/>}/>
- <Route patch='/Contacto' element={<Contacto/>}/>
- <Route patch='/Informacion' element={<Informacion/>}/>
- <Route patch='/Destacado' element={<Destacado/>}/>
+ <Route path='/' element={<Inicio/>}/>
+ <Route path='/Contacto' element={<Contacto/>}/>
+ <Route path='/Informacion' element={<Informacion/>}/>
+ <Route path='/Destacado' element={<Destacado/>}/>
+ <Route path='/' element={<CardWidget/>}/>
+
 <Route/>
  </Routes>
  </BrowserRouter>
